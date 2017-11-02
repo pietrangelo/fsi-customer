@@ -1,4 +1,5 @@
-FROM entando/entando-base-image-432
+# This is the docker hub image
+FROM entando/entando-docker-base-image
 
 LABEL mainteiner="Pietrangelo Masala <p.masala@entando.com>"
 
