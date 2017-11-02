@@ -3,8 +3,6 @@ FROM entando/entando-docker-base-image
 
 LABEL mainteiner="Pietrangelo Masala <p.masala@entando.com>"
 
-COPY filter-development-unix.properties /home/entando/filter-development-unix.properties
-
 USER entando
 WORKDIR /home/entando
 
