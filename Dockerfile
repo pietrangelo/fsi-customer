@@ -9,7 +9,8 @@ WORKDIR /opt/entando
 
 RUN git clone https://github.com/entando/fsi-onboarding-entando.git \
 && rm -f fsi-onboarding-entando/fsi-customer/src/main/filters/filter-development-unix.properties \
-&& cp filter-development-unix.properties fsi-onboarding-entando/fsi-customer/src/main/filters/ 
+&& cp filter-development-unix.properties fsi-onboarding-entando/fsi-customer/src/main/filters/ \
+&& chmod -R 777 /opt/entando/fsi-onboarding-entando/fsi-customer/
 
 USER 1001
 
